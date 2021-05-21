@@ -1,5 +1,5 @@
 <template>
-  <input type="text" v-model="inputVal" />
+  <input type="text" v-model="inputVal" disabled/>
   <button @click="handleOnClick">+</button>
 </template>
 
