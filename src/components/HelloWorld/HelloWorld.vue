@@ -1,5 +1,7 @@
 <template>
+  <div class="example">
     <p>{{ msg }}</p>
+  </div>
 </template>
 
 <script>
@@ -13,7 +15,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-p {
-  color: blue;
-}
+@import './src/components/HelloWorld/styles';
 </style>

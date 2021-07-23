@@ -1,0 +1,71 @@
+@import './src/shared/styles';
+
+$basic-white-color: #e4e4e4;
+$basic-blue-color: #2684ff;
+
+.Calculator {
+  border: 1px solid black;
+  padding: 20px;
+  background: #464646;
+  border-radius: 5px;
+  color: $basic-white-color;
+  display: inline-block;
+
+  h1 {
+    color: $basic-white-color;
+  }
+
+  &__mainWrapper, &__buttonWrapper {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  &__result {
+    font-size: 22px;
+    color: $basic-blue-color;
+    font-weight: bold;
+  }
+
+  input:focus-visible {
+    outline: none;
+    border: 2px solid $basic-blue-color;
+  }
+
+  &__operations {
+    width: 60px;
+  }
+
+  input, &__operations, &__result {
+    margin: 0 10px;
+  }
+
+  input, &__operations {
+    border-radius: 4px;
+  }
+
+  &__submitBtn {
+    background: $basic-blue-color;
+    color: $basic-white-color;
+  }
+
+  & input[type="button"]:disabled {
+    background: #110952;
+    color: #525252;
+  }
+
+  /* animations */
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.5s ease;
+  }
+
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
+  }
+}
+
+
+
+
